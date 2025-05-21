@@ -1,0 +1,181 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cognitia</title>
+  <link rel="icon" href="logo1.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    @font-face {
+  font-family: 'MyFont';
+  src: url('norwester.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+    /* Video background - centered and fit */
+    #bg-video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: 50%;
+      height: 50%;
+      z-index: -1;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      align-items: center;
+      background: #150f22;
+      padding: 6px 20px;
+      height: 60px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+    }
+
+    .logo-img {
+      height: 36px;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-family: 'Poppins';
+      font-size: 14px;
+      padding: 8px 12px;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 75%;
+  text-align: left;
+  padding-left: 60px;
+}
+
+.hero-content h1 {
+  font-size: 70px;
+  font-weight: 800;
+  color: white;
+  font-family: 'MyFont';
+  margin: 0 0 10px 0; /* Only bottom margin */
+  line-height: 1;
+}
+
+
+.cognitia-logo {
+  display: block;
+  width: 450px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0px;
+  line-height: 0; /* Prevent inline spacing */
+}
+
+
+.download-btn {
+  width: 180px;
+  cursor: pointer;
+}
+
+/* Bottom-left art behind content */
+.corner-art {
+  position: absolute;
+  bottom: 50px; /* Move up by setting this to any pixel value */
+  left: 0;
+  width: auto;
+  height: 250px;
+  z-index: 1;
+  pointer-events: none;
+  margin: 0;
+  padding: 0;
+}
+
+.title-group {
+  margin-left: 45px;
+  width: 450px; /* same as the image */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center text above the image */
+}
+
+
+  </style>
+</head>
+<body>
+
+  <video autoplay muted loop id="bg-video">
+    <source src="bg11.mp4" type="video/mp4">
+  </video>
+
+  <nav>
+    <div class="logo">
+        <img src="logo1.png" alt="Logo" class="logo-img">
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="tutsnega.html">How to Play</a>
+    </div>
+  </nav>
+
+<section class="hero">
+  <div class="hero-content">
+<div class="title-group">
+  <h1>WELCOME TO</h1>
+  <img src="cognitia-logo.png" alt="COGNITIA" class="cognitia-logo">
+      <a href="Cognitia.exe">
+      <img src="download-button.png" alt="Download" class="download-btn">
+    </a>
+</div>
+  </div>
+  <img src="corner-art.png" alt="Character" class="corner-art">
+</section>
+
+
+</body>
+</html>

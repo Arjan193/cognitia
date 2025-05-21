@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cognitia</title>
+  <link rel="icon" href="logo1.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'MyFont';
+      src: url('norwester.otf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Migra';
+      src: url('migra.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Hagrid';
+      src: url('hagrid.ttf') format('opentype');
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('bg0.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      background: #150f22;
+      padding: 6px 20px;
+      height: 60px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+    }
+
+    .logo-img {
+      height: 36px;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-family: 'Poppins';
+      font-size: 14px;
+      padding: 8px 12px;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    .content {
+      height: calc(100vh - 60px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+      flex-direction: column;
+    }
+
+    .content h1 {
+      font-family: 'Migra', serif;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .content hr {
+      border: 0;
+      height: 2px;
+      background-color: white;
+      width: 40%;
+      margin: 20px auto;
+    }
+
+    .content p {
+      font-family: 'Hagrid', serif;
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 500px;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="logo1.png" alt="Logo" class="logo-img">
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="tutsnega.html">How to Play</a>
+    </div>
+  </nav>
+
+  <div class="content">
+    <h1>ABOUT US</h1>
+    <hr>
+    <p>
+      Welcome to Cognitia, a gamified learning app designed to make studying smarter and more fun. We combine active recall techniques with engaging game mechanics to help you learn faster, remember longer, and enjoy the process. Whether you're mastering a new subject or prepping for an exam, Cognitia turns learning into an adventure.
+    </p>
+  </div>
+
+</body>
+</html>

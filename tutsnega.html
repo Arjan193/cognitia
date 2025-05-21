@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cognitia</title>
+  <link rel="icon" href="logo1.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'MyFont';
+      src: url('norwester.otf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Migra';
+      src: url('migra.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Hagrid';
+      src: url('hagrid.ttf') format('opentype');
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('b2.png') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      background: #150f22;
+      padding: 6px 20px;
+      height: 60px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+    }
+
+    .logo-img {
+      height: 36px;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-family: 'Poppins';
+      font-size: 14px;
+      padding: 8px 12px;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    .how-to-play {
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+      margin: 40px auto;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .how-to-play h1 {
+      font-family: 'Migra', sans-serif;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .how-to-play hr {
+      width: 30%;
+      margin: auto;
+      border: 1px solid white;
+      margin-bottom: 40px;
+    }
+
+    .step-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .step-row.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .step-img {
+      flex: 1 1 40%;
+      text-align: center;
+    }
+
+    .step-img img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+
+    .step-text {
+      flex: 1 1 50%;
+      font-family: 'MyFont';
+      font-size: 20px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="logo1.png" alt="Logo" class="logo-img">
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="tutsnega.html">How to Play</a>
+    </div>
+  </nav>
+
+  <section class="how-to-play">
+    <h1>HOW TO PLAY</h1>
+    <hr>
+
+    <div class="step-row">
+      <div class="step-img">
+        <img src="c1.png" alt="Step 1">
+      </div>
+      <div class="step-text">
+        1. SET THE TIMER AND CREATE YOUR OWN QUESTIONS
+      </div>
+    </div>
+
+    <div class="step-row reverse">
+      <div class="step-img">
+        <img src="c2.png" alt="Step 2">
+      </div>
+      <div class="step-text">
+        2. RUN AROUND THE MAZE AND ANSWER THE QUESTIONS BEFORE THE TIMER RUNS OUT
+      </div>
+    </div>
+
+    <div class="step-row">
+      <div class="step-img">
+        <img src="c3.png" alt="Step 3">
+      </div>
+      <div class="step-text">
+        3. REVIEW YOUR RESULTS
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
